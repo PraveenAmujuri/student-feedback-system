@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install flask
+RUN pip install -r app/requirements.txt
 
-CMD ["python", "app.py"]
+CMD ["python", "app/app.py"]

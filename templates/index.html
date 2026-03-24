@@ -22,8 +22,8 @@
         {% if feedbacks %}
             {% for f in feedbacks %}
                 <div class="feedback-item">
-                    <p><span class="name">{{ f.name }}</span></p>
-                    <p>{{ f.feedback }}</p>
+                    <p><span class="name">{{ f[1] }}</span></p>
+                    <p>{{ f[2] }}</p>
                 </div>
             {% endfor %}
         {% else %}
